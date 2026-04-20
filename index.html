@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechWizards — Building the Future of Technology</title>
+  <meta name="description" content="TechWizards engineers sophisticated digital ecosystems — mobile apps, web apps, tarpaulins, infographics, logos, and presentations." />
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav>
+    <a class="nav-logo" href="#hero">
+      <span>TechWizards;</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#" class="btn-nav" id="openContact">Contact Us</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="system-badge">
+        <span class="status-dot"></span>
+        SYSTEM ONLINE
+      </div>
+      <h1 class="hero-title">
+        Building the<br />
+        <span class="highlight">Future</span> of<br />
+        Technology
+      </h1>
+      <p class="hero-desc">
+        We engineer sophisticated digital ecosystems for enterprise clients.<br />
+        Precision, performance, and unparalleled <span class="typed-text"></span>
+      </p>
+      <div class="hero-btns">
+        <a href="#" class="btn-primary" id="openContactHero">Start Project</a>
+        <a href="#portfolio" class="btn-secondary">Explore Solutions</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-grid">
+        <div class="hero-card">
+          <img src="images/mobile.jpg" alt="Mobile Apps" />
+          <div class="hero-card-label">Mobile Apps</div>
+        </div>
+        <div class="hero-card">
+          <img src="images/website.jpg" alt="Web Apps" />
+          <div class="hero-card-label">Web Apps</div>
+        </div>
+        <div class="hero-card">
+          <img src="images/tarp.jpg" alt="Tarpaulin" />
+          <div class="hero-card-label">Tarpaulin</div>
+        </div>
+        <div class="hero-card">
+          <img src="images/infographic.jpg" alt="Infographics" />
+          <div class="hero-card-label">Infographics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SERVICES ═══════════════════ -->
+  <section id="services">
+    <div class="section-header reveal">
+      <div class="section-tag">WHAT WE DO</div>
+      <h2 class="section-title">Our <span>Services</span></h2>
+      <p class="section-sub">From code to creative — we deliver end-to-end digital solutions with precision and style.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">📱</div>
+        <h3>Mobile Applications</h3>
+        <p>Native and cross-platform mobile apps built for performance and seamless user experience on iOS and Android.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🌐</div>
+        <h3>Web Applications</h3>
+        <p>Full-stack web platforms engineered for scale — from landing pages to complex enterprise dashboards.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🖼️</div>
+        <h3>Tarpaulin Design</h3>
+        <p>Eye-catching tarpaulin layouts for events, congratulations, and institutional display — print-ready quality.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">📊</div>
+        <h3>Infographics</h3>
+        <p>Data-driven visual storytelling that transforms complex information into clear, compelling graphics.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🗂️</div>
+        <h3>Flyers & Marketing</h3>
+        <p>Professionally designed flyers and marketing materials that communicate your message with impact.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🏷️</div>
+        <h3>Logos & Branding</h3>
+        <p>Distinctive brand identities crafted to make your organization recognizable, memorable, and trusted.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎞️</div>
+        <h3>PowerPoint Presentations</h3>
+        <p>Polished, professionally structured presentations for academic, institutional, and business audiences.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">🎨</div>
+        <h3>UI / UX Design</h3>
+        <p>User-centered interface design that balances aesthetics with intuitive functionality and accessibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PORTFOLIO ═══════════════════ -->
+  <section id="portfolio">
+    <div class="section-header reveal">
+      <div class="section-tag">OUR WORK</div>
+      <h2 class="section-title">Portfolio <span>Showcase</span></h2>
+      <p class="section-sub">A curated selection of projects across our key service areas.</p>
+    </div>
+
+    <div class="portfolio-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="tarpaulin">Tarpaulin</button>
+      <button class="filter-btn" data-filter="infographic">Infographics</button>
+      <button class="filter-btn" data-filter="flyer">Flyers</button>
+      <button class="filter-btn" data-filter="logo">Logos</button>
+      <button class="filter-btn" data-filter="ppt">Presentations</button>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item reveal" data-category="mobile" data-src="images/mobile.jpg">
+        <img src="images/mobile.jpg" alt="Mobile Applications" />
+        <div class="portfolio-label">Mobile Applications</div>
+        <div class="portfolio-overlay">
+          <span class="category">MOBILE</span>
+          <h3>Mobile Applications</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-category="web" data-src="images/website.jpg">
+        <img src="images/website.jpg" alt="Website Applications" />
+        <div class="portfolio-label">Website Applications</div>
+        <div class="portfolio-overlay">
+          <span class="category">WEB</span>
+          <h3>Website Applications</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-category="tarpaulin" data-src="images/tarp.jpg">
+        <img src="images/tarp.jpg" alt="Tarpaulin Design" />
+        <div class="portfolio-label">Tarpaulin</div>
+        <div class="portfolio-overlay">
+          <span class="category">PRINT</span>
+          <h3>Tarpaulin Design</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-category="infographic" data-src="images/infographic.jpg">
+        <img src="images/infographic.jpg" alt="Infographics" />
+        <div class="portfolio-label">Infographics</div>
+        <div class="portfolio-overlay">
+          <span class="category">DESIGN</span>
+          <h3>Infographics</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-category="flyer" data-src="images/flyer.jpg">
+        <img src="images/flyer.jpg" alt="Flyers" />
+        <div class="portfolio-label">Flyers</div>
+        <div class="portfolio-overlay">
+          <span class="category">PRINT</span>
+          <h3>Flyers & Marketing</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-category="logo" data-src="images/logo.jpg">
+        <img src="images/logo.jpg" alt="Logos" />
+        <div class="portfolio-label">Logos & Branding</div>
+        <div class="portfolio-overlay">
+          <span class="category">BRANDING</span>
+          <h3>Logos & Branding</h3>
+        </div>
+      </div>
+
+      <div class="portfolio-item reveal" data-category="ppt" data-src="images/powpt.jpg">
+        <img src="images/powpt.jpg" alt="PowerPoint Presentations" />
+        <div class="portfolio-label">PowerPoint Presentations</div>
+        <div class="portfolio-overlay">
+          <span class="category">PRESENTATION</span>
+          <h3>PowerPoint Presentations</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════ ABOUT ═══════════════════ -->
+  <section id="about">
+    <div class="about-content reveal-left">
+      <div class="section-tag">WHO WE ARE</div>
+      <h2 class="section-title" style="text-align:left;margin-top:1rem;">About <span>TechWizards</span></h2>
+      <p>TechWizards is a passionate team of Information Technology students from St. Anthony's College, dedicated to synthesizing the future of IT through creative and technical excellence.</p>
+      <p>We specialize in Programming, UI/UX, and Web Development — combining modern design sensibilities with robust engineering to deliver digital products that make an impact.</p>
+      <p>From mobile applications to eye-catching print designs, we bring ideas to life with precision, performance, and unparalleled innovation.</p>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <span class="counter-value" data-target="20" data-suffix="+">0+</span>
+          <span class="label">PROJECTS</span>
+        </div>
+        <div class="stat-card">
+          <span class="counter-value" data-target="8" data-suffix="">0</span>
+          <span class="label">SERVICES</span>
+        </div>
+        <div class="stat-card">
+          <span class="counter-value" data-target="100" data-suffix="%">0%</span>
+          <span class="label">DEDICATION</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-visual reveal-right">
+      <div class="skill-tag">
+        <span class="skill-icon">💻</span>
+        <div>
+          <span class="skill-name">Programming</span>
+          <span class="skill-level">Core Specialty</span>
+        </div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">🎨</span>
+        <div>
+          <span class="skill-name">UI / UX</span>
+          <span class="skill-level">Core Specialty</span>
+        </div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">🌐</span>
+        <div>
+          <span class="skill-name">Web Dev</span>
+          <span class="skill-level">Core Specialty</span>
+        </div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">📱</span>
+        <div>
+          <span class="skill-name">Mobile Dev</span>
+          <span class="skill-level">Specialty</span>
+        </div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">🍔</span>
+        <div>
+          <span class="skill-name">Foodie</span>
+          <span class="skill-level">Hobby</span>
+        </div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">🎵</span>
+        <div>
+          <span class="skill-name">Music</span>
+          <span class="skill-level">Hobby</span>
+        </div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">🎮</span>
+        <div>
+          <span class="skill-name">Online Games</span>
+          <span class="skill-level">Hobby</span>
+        </div>
+      </div>
+      <div class="skill-tag">
+        <span class="skill-icon">✏️</span>
+        <div>
+          <span class="skill-name">Designing</span>
+          <span class="skill-level">Hobby</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer id="footer-section">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand reveal">
+        <div class="brand-name">TechWizards;</div>
+        <p>We synthesize the future of IT — engineering sophisticated digital ecosystems with precision, performance, and unparalleled innovation.</p>
+        <div class="social-links">
+          <a class="social-link" href="mailto:techwizards42026@gmail.com" title="Email">✉️</a>
+          <a class="social-link" href="https://www.facebook.com/profile.php?id=61587937806654" target="_blank" rel="noopener" title="Facebook">💬</a>
+          <a class="social-link" href="tel:+639939790700" title="Call">📞</a>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col reveal">
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="#services">Mobile Applications</a></li>
+          <li><a href="#services">Web Applications</a></li>
+          <li><a href="#services">Tarpaulin Design</a></li>
+          <li><a href="#services">Infographics</a></li>
+          <li><a href="#services">Flyers</a></li>
+          <li><a href="#services">Logos & Branding</a></li>
+          <li><a href="#services">Presentations</a></li>
+          <li><a href="#services">UI / UX Design</a></li>
+        </ul>
+      </div>
+
+      <!-- Navigation -->
+      <div class="footer-col reveal">
+        <h4>NAVIGATION</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#" id="openContactFooter">Contact Us</a></li>
+        </ul>
+        <br />
+        <h4>LEGAL</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-col reveal">
+        <h4>CONTACT INFO</h4>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-text">
+            <a href="tel:+639939790700">0993 979 0700</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-text">
+            <a href="mailto:techwizards42026@gmail.com">techwizards42026@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">💬</div>
+          <div class="contact-text">
+            <a href="https://www.facebook.com/profile.php?id=61587937806654" target="_blank" rel="noopener">TechWizards; on Facebook</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechWizards. Synthesizing the future of IT.</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ LIGHTBOX ═══════════════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&#x2715;</button>
+    <img src="" alt="Portfolio preview" id="lightboxImg" />
+  </div>
+
+  <!-- ═══════════════════ CONTACT MODAL ═══════════════════ -->
+  <div class="contact-modal" id="contactModal">
+    <div class="contact-modal-backdrop" id="contactBackdrop"></div>
+    <div class="contact-modal-box">
+
+      <button class="contact-modal-close" id="closeContact">&#x2715;</button>
+
+      <div class="contact-modal-header">
+        <div class="section-tag" style="margin-bottom:0.75rem;">GET IN TOUCH</div>
+        <h2>Send Us a <span style="color:var(--cyan)">Message</span></h2>
+        <p>We'll get back to you as soon as possible.</p>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="first_name" placeholder="Juan" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="last_name" placeholder="Dela Cruz" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service...</option>
+            <option>Mobile Application</option>
+            <option>Web Application</option>
+            <option>Tarpaulin Design</option>
+            <option>Infographic</option>
+            <option>Flyer / Marketing</option>
+            <option>Logo & Branding</option>
+            <option>PowerPoint Presentation</option>
+            <option>UI / UX Design</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <span class="btn-submit-text">Send Message</span>
+          <span class="btn-submit-icon">→</span>
+        </button>
+
+      </form>
+
+      <!-- Success state (shown after submit) -->
+      <div class="contact-success" id="contactSuccess">
+        <div class="success-icon">✓</div>
+        <h3>Message Sent!</h3>
+        <p>Thanks for reaching out. We'll reply to your email shortly.</p>
+        <div style="display:flex;gap:0.75rem;justify-content:center;margin-top:1.5rem;flex-wrap:wrap;">
+          <button class="btn-secondary" id="sendAnother">Send Another</button>
+          <button class="btn-primary"   id="successClose">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="JS/main.js"></script>
+  <script type="module" src="JS/firebase-contact.js"></script>
+</body>
+</html>
