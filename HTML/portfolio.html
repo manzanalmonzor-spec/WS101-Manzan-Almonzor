@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — TechWizards</title>
+    <meta
+      name="description"
+      content="Explore TechWizards' portfolio of 20+ projects — mobile apps, web platforms, graphic design, branding, and more."
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/portfolio.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-ring"></div>
+    <canvas id="particles"></canvas>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a class="nav-logo" href="../index.html">
+        <img src="../images/logo.jpg" alt="TechWizards Logo" />
+        <span>TechWizards;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li>
+          <a href="portfolio.html" class="active" aria-current="page"
+            >Portfolio</a
+          >
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="../index.html" class="btn-nav">Contact Us</a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="pt-header">
+      <div class="pt-header-inner reveal">
+        <div class="section-tag">OUR WORK</div>
+        <h1 class="pt-page-title">Portfolio <span>Showcase</span></h1>
+        <p class="pt-page-sub">
+          Every project is a story of precision, creativity, and relentless
+          dedication.<br />Browse our work below and meet the team behind it
+          all.
+        </p>
+      </div>
+      <div class="pt-scroll-hint">
+        <div class="pt-scroll-line"></div>
+        <span>SCROLL</span>
+      </div>
+    </header>
+
+    <!-- STATS SECTION -->
+    <section class="pt-stats-section">
+      <div class="pt-stats-grid">
+        <div class="pt-stat reveal">
+          <div class="pt-stat-icon">🚀</div>
+          <span class="pt-stat-num" data-target="20" data-suffix="+">0+</span>
+          <span class="pt-stat-label">Projects Delivered</span>
+          <p class="pt-stat-desc">Across mobile, web, and design categories</p>
+        </div>
+
+        <div class="pt-stat reveal">
+          <div class="pt-stat-icon">⚙️</div>
+          <span class="pt-stat-num" data-target="8" data-suffix="">0</span>
+          <span class="pt-stat-label">Services Offered</span>
+          <p class="pt-stat-desc">
+            End-to-end digital solutions under one roof
+          </p>
+        </div>
+
+        <div class="pt-stat reveal">
+          <div class="pt-stat-icon">👥</div>
+          <span class="pt-stat-num" data-target="4" data-suffix="">0</span>
+          <span class="pt-stat-label">Core Team Members</span>
+          <p class="pt-stat-desc">IT specialists from St. Anthony's College</p>
+        </div>
+
+        <div class="pt-stat reveal">
+          <div class="pt-stat-icon">✨</div>
+          <span class="pt-stat-num" data-target="100" data-suffix="%">0%</span>
+          <span class="pt-stat-label">Dedication Rate</span>
+          <p class="pt-stat-desc">
+            Every output polished to professional standard
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO WORKS SECTION -->
+    <section class="pt-works-section">
+      <div class="section-header reveal">
+        <div class="section-tag">FEATURED PROJECTS</div>
+        <h2 class="section-title">What We've <span>Built</span></h2>
+        <p class="section-sub">
+          A curated selection spanning all our service categories. Click any
+          project to see the full story.
+        </p>
+      </div>
+
+      <!-- FILTERS -->
+      <div class="pt-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="tarpaulin">Tarpaulin</button>
+        <button class="filter-btn" data-filter="infographic">
+          Infographics
+        </button>
+        <button class="filter-btn" data-filter="flyer">Flyers</button>
+        <button class="filter-btn" data-filter="logo">Logos</button>
+        <button class="filter-btn" data-filter="ppt">Presentations</button>
+        <button class="filter-btn" data-filter="uiux">Logo Finalization</button>
+      </div>
+
+      <!-- PROJECT GRID (rendered by JS) -->
+      <div class="pt-grid" id="ptGrid"></div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section class="pt-team-section">
+      <div class="section-header reveal">
+        <div class="section-tag">THE BUILDERS</div>
+        <h2 class="section-title">Meet the <span>Team</span></h2>
+        <p class="section-sub">
+          The minds behind every line of code, every pixel, and every polished
+          output.
+        </p>
+      </div>
+      <div class="pt-team-grid" id="ptTeamGrid"></div>
+    </section>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div class="pt-modal" id="ptModal" role="dialog" aria-modal="true">
+      <div class="pt-modal-backdrop" id="ptBackdrop"></div>
+      <div class="pt-modal-box" id="ptModalBox">
+        <button class="pt-modal-close" id="ptModalClose" aria-label="Close">
+          &#x2715;
+        </button>
+        <div id="ptModalContent"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer-section">
+      <div class="footer-grid">
+        <div class="footer-brand reveal">
+          <div class="brand-name">TechWizards;</div>
+          <p>
+            We synthesize the future of IT — engineering sophisticated digital
+            ecosystems with precision, performance, and unparalleled innovation.
+          </p>
+          <div class="social-links">
+            <a
+              class="social-link"
+              href="mailto:techwizards42026@gmail.com"
+              title="Email"
+              >✉️</a
+            >
+            <a
+              class="social-link"
+              href="https://www.facebook.com/profile.php?id=61587937806654"
+              target="_blank"
+              rel="noopener"
+              title="Facebook"
+              >💬</a
+            >
+            <a class="social-link" href="tel:+639939790700" title="Call">📞</a>
+          </div>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>PORTFOLIO</h4>
+          <ul>
+            <li>
+              <a
+                href="portfolio.html"
+                class="pt-filter-link"
+                data-filter="mobile"
+                >Mobile Projects</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="pt-filter-link" data-filter="web"
+                >Web Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="portfolio.html"
+                class="pt-filter-link"
+                data-filter="tarpaulin"
+                >Tarpaulin</a
+              >
+            </li>
+            <li>
+              <a
+                href="portfolio.html"
+                class="pt-filter-link"
+                data-filter="infographic"
+                >Infographics</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="pt-filter-link" data-filter="logo"
+                >Logos</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="pt-filter-link" data-filter="ppt"
+                >Presentations</a
+              >
+            </li>
+            <li>
+              <a href="portfolio.html" class="pt-filter-link" data-filter="uiux"
+                >Logo Finalization</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>NAVIGATION</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="../index.html">Contact Us</a></li>
+          </ul>
+          <br />
+          <h4>OUR TEAM</h4>
+          <ul>
+            <li>
+              <a
+                href="https://github.com/manzanalmonzor-spec"
+                target="_blank"
+                rel="noopener"
+                >Almonzor Manzan</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/Kaisecret"
+                target="_blank"
+                rel="noopener"
+                >Khing Jay Regala</a
+              >
+            </li>
+            <li><a href="#">Dan Louise Baluntong</a></li>
+            <li><a href="#">Matt Lowee Espiritu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>CONTACT INFO</h4>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <a href="tel:+639939790700">0993 979 0700</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-text">
+              <a href="mailto:techwizards42026@gmail.com"
+                >techwizards42026@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div class="contact-text">
+              <a
+                href="https://www.facebook.com/profile.php?id=61587937806654"
+                target="_blank"
+                rel="noopener"
+                >TechWizards; on Facebook</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWizards. Synthesizing the future of IT.</p>
+      </div>
+    </footer>
+
+    <script src="../JS/portfolio.js"></script>
+    <script src="../JS/cursor-fx.js"></script>
+  </body>
+</html>

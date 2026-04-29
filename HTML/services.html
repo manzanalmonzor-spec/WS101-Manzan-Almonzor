@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services — TechWizards</title>
+    <meta
+      name="description"
+      content="Explore TechWizards' full range of digital services — mobile apps, web apps, tarpaulin, infographics, logos, presentations, and more."
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/services.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-ring"></div>
+    <canvas id="particles"></canvas>
+
+    <!-- NAVBAR -->
+    <nav>
+      <a class="nav-logo" href="../index.html">
+        <img src="../images/logo.jpg" alt="TechWizards Logo" />
+        <span>TechWizards;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a href="services.html" class="active" aria-current="page"
+            >Services</a
+          >
+        </li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="../index.html" class="btn-nav">Contact Us</a></li>
+      </ul>
+      <div class="hamburger"><span></span><span></span><span></span></div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="sv-header">
+      <div class="sv-header-inner">
+        <div class="sv-header-content reveal">
+          <div class="section-tag">WHAT WE DO</div>
+          <h1 class="sv-page-title">Our <span>Services</span></h1>
+          <p class="sv-page-sub">
+            From code to creative — we deliver end-to-end digital solutions with
+            precision and style.<br />Click any card to see exactly how we do
+            it.
+          </p>
+        </div>
+      </div>
+      <div class="sv-scroll-hint">
+        <div class="sv-scroll-line"></div>
+        <span>SCROLL</span>
+      </div>
+    </header>
+
+    <!-- SERVICES GRID -->
+    <section class="sv-section">
+      <div class="sv-grid">
+        <div class="sv-card reveal" data-service="mobile">
+          <div class="sv-card-img">
+            <img
+              src="../images/mobile.jpg"
+              alt="Mobile Applications"
+              loading="lazy"
+            />
+            <span class="sv-card-badge">MOBILE</span>
+            <div class="sv-card-hover-overlay">
+              <span class="sv-hover-cta">View Details →</span>
+            </div>
+          </div>
+          <div class="sv-card-body">
+            <div class="sv-icon-box"><span>📱</span></div>
+            <h3>Mobile Applications</h3>
+            <p>
+              Native and cross-platform mobile apps built for performance and
+              seamless user experience on iOS and Android.
+            </p>
+            <button class="sv-btn">
+              Explore Service <span class="sv-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sv-card reveal" data-service="web">
+          <div class="sv-card-img">
+            <img
+              src="../images/website.jpg"
+              alt="Web Applications"
+              loading="lazy"
+            />
+            <span class="sv-card-badge">WEB</span>
+            <div class="sv-card-hover-overlay">
+              <span class="sv-hover-cta">View Details →</span>
+            </div>
+          </div>
+          <div class="sv-card-body">
+            <div class="sv-icon-box"><span>🌐</span></div>
+            <h3>Web Applications</h3>
+            <p>
+              Full-stack web platforms engineered for scale — from landing pages
+              to complex enterprise dashboards.
+            </p>
+            <button class="sv-btn">
+              Explore Service <span class="sv-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sv-card reveal" data-service="tarpaulin">
+          <div class="sv-card-img">
+            <img
+              src="../images/tarp.jpg"
+              alt="Tarpaulin Design"
+              loading="lazy"
+            />
+            <span class="sv-card-badge">PRINT</span>
+            <div class="sv-card-hover-overlay">
+              <span class="sv-hover-cta">View Details →</span>
+            </div>
+          </div>
+          <div class="sv-card-body">
+            <div class="sv-icon-box"><span>🖼️</span></div>
+            <h3>Tarpaulin Design</h3>
+            <p>
+              Eye-catching tarpaulin layouts for events, congratulations, and
+              institutional display — print-ready quality.
+            </p>
+            <button class="sv-btn">
+              Explore Service <span class="sv-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sv-card reveal" data-service="infographics">
+          <div class="sv-card-img">
+            <img
+              src="../images/infographic.jpg"
+              alt="Infographics"
+              loading="lazy"
+            />
+            <span class="sv-card-badge">DESIGN</span>
+            <div class="sv-card-hover-overlay">
+              <span class="sv-hover-cta">View Details →</span>
+            </div>
+          </div>
+          <div class="sv-card-body">
+            <div class="sv-icon-box"><span>📊</span></div>
+            <h3>Infographics</h3>
+            <p>
+              Data-driven visual storytelling that transforms complex
+              information into clear, compelling graphics.
+            </p>
+            <button class="sv-btn">
+              Explore Service <span class="sv-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sv-card reveal" data-service="flyers">
+          <div class="sv-card-img">
+            <img
+              src="../images/flyer.jpg"
+              alt="Flyers & Marketing"
+              loading="lazy"
+            />
+            <span class="sv-card-badge">MARKETING</span>
+            <div class="sv-card-hover-overlay">
+              <span class="sv-hover-cta">View Details →</span>
+            </div>
+          </div>
+          <div class="sv-card-body">
+            <div class="sv-icon-box"><span>🗂️</span></div>
+            <h3>Flyers & Marketing</h3>
+            <p>
+              Professionally designed flyers and marketing materials that
+              communicate your message with impact.
+            </p>
+            <button class="sv-btn">
+              Explore Service <span class="sv-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sv-card reveal" data-service="logos">
+          <div class="sv-card-img">
+            <img
+              src="../images/logozz.jpg"
+              alt="Logos & Branding"
+              loading="lazy"
+            />
+            <span class="sv-card-badge">BRANDING</span>
+            <div class="sv-card-hover-overlay">
+              <span class="sv-hover-cta">View Details →</span>
+            </div>
+          </div>
+          <div class="sv-card-body">
+            <div class="sv-icon-box"><span>🏷️</span></div>
+            <h3>Logos & Branding</h3>
+            <p>
+              Distinctive brand identities crafted to make your organization
+              recognizable, memorable, and trusted.
+            </p>
+            <button class="sv-btn">
+              Explore Service <span class="sv-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sv-card reveal" data-service="powerpoint">
+          <div class="sv-card-img">
+            <img
+              src="../images/powpt.jpg"
+              alt="PowerPoint Presentations"
+              loading="lazy"
+            />
+            <span class="sv-card-badge">PRESENTATION</span>
+            <div class="sv-card-hover-overlay">
+              <span class="sv-hover-cta">View Details →</span>
+            </div>
+          </div>
+          <div class="sv-card-body">
+            <div class="sv-icon-box"><span>🎞️</span></div>
+            <h3>PowerPoint Presentations</h3>
+            <p>
+              Polished, professionally structured presentations for academic,
+              institutional, and business audiences.
+            </p>
+            <button class="sv-btn">
+              Explore Service <span class="sv-arrow">→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="sv-card reveal" data-service="uiux">
+          <div class="sv-card-img">
+            <img
+              src="../images/awtss.jpg"
+              alt="UI / UX Design"
+              loading="lazy"
+            />
+            <span class="sv-card-badge">UI / UX</span>
+            <div class="sv-card-hover-overlay">
+              <span class="sv-hover-cta">View Details →</span>
+            </div>
+          </div>
+          <div class="sv-card-body">
+            <div class="sv-icon-box"><span>🎨</span></div>
+            <h3>UI / UX Design</h3>
+            <p>
+              User-centered interface design that balances aesthetics with
+              intuitive functionality and accessibility.
+            </p>
+            <button class="sv-btn">
+              Explore Service <span class="sv-arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE DETAIL MODAL -->
+    <div class="sv-modal" id="svModal" role="dialog" aria-modal="true">
+      <div class="sv-modal-backdrop" id="svBackdrop"></div>
+      <div class="sv-modal-box" id="svModalBox">
+        <button class="sv-modal-close" id="svModalClose" aria-label="Close">
+          &#x2715;
+        </button>
+        <div id="svModalContent"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer-section">
+      <div class="footer-grid">
+        <div class="footer-brand reveal">
+          <div class="brand-name">TechWizards;</div>
+          <p>
+            We synthesize the future of IT — engineering sophisticated digital
+            ecosystems with precision, performance, and unparalleled innovation.
+          </p>
+          <div class="social-links">
+            <a
+              class="social-link"
+              href="mailto:techwizards42026@gmail.com"
+              title="Email"
+              >✉️</a
+            >
+            <a
+              class="social-link"
+              href="https://www.facebook.com/profile.php?id=61587937806654"
+              target="_blank"
+              rel="noopener"
+              title="Facebook"
+              >💬</a
+            >
+            <a class="social-link" href="tel:+639939790700" title="Call">📞</a>
+          </div>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>SERVICES</h4>
+          <ul>
+            <li>
+              <a href="#" class="sv-footer-link" data-service="mobile"
+                >Mobile Applications</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sv-footer-link" data-service="web"
+                >Web Applications</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sv-footer-link" data-service="tarpaulin"
+                >Tarpaulin Design</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sv-footer-link" data-service="infographics"
+                >Infographics</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sv-footer-link" data-service="flyers"
+                >Flyers</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sv-footer-link" data-service="logos"
+                >Logos & Branding</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sv-footer-link" data-service="powerpoint"
+                >Presentations</a
+              >
+            </li>
+            <li>
+              <a href="#" class="sv-footer-link" data-service="uiux"
+                >UI / UX Design</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>NAVIGATION</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="../index.html">Contact Us</a></li>
+          </ul>
+          <br />
+          <h4>LEGAL</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>CONTACT INFO</h4>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-text">
+              <a href="tel:+639939790700">0993 979 0700</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-text">
+              <a href="mailto:techwizards42026@gmail.com"
+                >techwizards42026@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div class="contact-text">
+              <a
+                href="https://www.facebook.com/profile.php?id=61587937806654"
+                target="_blank"
+                rel="noopener"
+                >TechWizards; on Facebook</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWizards. Synthesizing the future of IT.</p>
+      </div>
+    </footer>
+
+    <!-- ═══════════════════ CONTACT MODAL ═══════════════════ -->
+    <div class="contact-modal" id="contactModal">
+      <div class="contact-modal-backdrop" id="contactBackdrop"></div>
+      <div class="contact-modal-box">
+        <button class="contact-modal-close" id="closeContact">&#x2715;</button>
+
+        <div class="contact-modal-header">
+          <div class="section-tag" style="margin-bottom: 0.75rem">
+            GET IN TOUCH
+          </div>
+          <h2>Send Us a <span style="color: var(--cyan)">Message</span></h2>
+          <p>We'll get back to you as soon as possible.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="first_name"
+                placeholder="Juan"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="last_name"
+                placeholder="Dela Cruz"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option>Mobile Application</option>
+              <option>Web Application</option>
+              <option>Tarpaulin Design</option>
+              <option>Infographic</option>
+              <option>Flyer / Marketing</option>
+              <option>Logo &amp; Branding</option>
+              <option>PowerPoint Presentation</option>
+              <option>UI / UX Design</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell us about your project..."
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <span class="btn-submit-text">Send Message</span>
+            <span class="btn-submit-icon">→</span>
+          </button>
+        </form>
+
+        <div class="contact-success" id="contactSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Message Sent!</h3>
+          <p>Thanks for reaching out. We'll reply to your email shortly.</p>
+          <div
+            style="
+              display: flex;
+              gap: 0.75rem;
+              justify-content: center;
+              margin-top: 1.5rem;
+              flex-wrap: wrap;
+            "
+          >
+            <button class="btn-secondary" id="sendAnother">Send Another</button>
+            <button class="btn-primary" id="successClose">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/services.js"></script>
+    <script src="../JS/firebase-contact.js" type="module"></script>
+    <script src="../JS/cursor-fx.js"></script>
+  </body>
+</html>

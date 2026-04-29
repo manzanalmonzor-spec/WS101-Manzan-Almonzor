@@ -1,0 +1,652 @@
+/* ── Services Page CSS ── */
+
+/* ─── PAGE HEADER ─── */
+.sv-header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 40%, rgba(0, 245, 255, 0.08) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 50% at 80% 80%, rgba(0, 150, 200, 0.05) 0%, transparent 60%);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.sv-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(0deg, var(--dark) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.sv-header-inner {
+  text-align: center;
+  padding: 100px 6% 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.sv-header-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sv-page-title {
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 1rem 0 1.25rem;
+  line-height: 1.1;
+}
+
+.sv-page-title span {
+  color: var(--cyan);
+}
+
+.sv-page-sub {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.sv-scroll-hint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.sv-scroll-line {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(180deg, var(--cyan), transparent);
+  animation: scrollPulse 2s ease-in-out infinite;
+}
+
+.sv-scroll-hint span {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 3px;
+  color: var(--cyan);
+  opacity: 0.6;
+}
+
+@keyframes scrollPulse {
+
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scaleY(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scaleY(1.1);
+  }
+}
+
+/* ─── MAIN SECTION ─── */
+.sv-section {
+  position: relative;
+  z-index: 2;
+  padding: 70px 4% 90px;
+  background: transparent;
+}
+
+/* ─── GRID ─── */
+.sv-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* ─── CARD ─── */
+.sv-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+  position: relative;
+}
+
+.sv-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.sv-card:hover::before {
+  opacity: 1;
+}
+
+.sv-card:hover {
+  border-color: var(--cyan);
+  box-shadow: var(--glow), 0 20px 60px rgba(0, 0, 0, 0.4);
+  transform: translateY(-8px);
+}
+
+/* ─── CARD IMAGE ─── */
+.sv-card-img {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+}
+
+.sv-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.75) saturate(0.85);
+  transition: transform 0.5s ease, filter 0.4s ease;
+}
+
+.sv-card:hover .sv-card-img img {
+  transform: scale(1.08);
+  filter: brightness(0.6) saturate(0.7);
+}
+
+.sv-card-badge {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+  background: rgba(0, 245, 255, 0.15);
+  border: 1px solid rgba(0, 245, 255, 0.4);
+  backdrop-filter: blur(8px);
+  color: var(--cyan);
+  font-family: 'Orbitron', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  z-index: 2;
+}
+
+.sv-card-hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 245, 255, 0.2), rgba(0, 0, 0, 0.5));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.sv-card:hover .sv-card-hover-overlay {
+  opacity: 1;
+}
+
+.sv-hover-cta {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #fff;
+  background: rgba(0, 245, 255, 0.2);
+  border: 1px solid rgba(0, 245, 255, 0.6);
+  padding: 0.5rem 1.25rem;
+  border-radius: 30px;
+  backdrop-filter: blur(4px);
+  transform: translateY(6px);
+  transition: transform 0.4s ease;
+}
+
+.sv-card:hover .sv-hover-cta {
+  transform: translateY(0);
+}
+
+/* ─── CARD BODY ─── */
+.sv-card-body {
+  padding: 1.25rem 1.4rem 1.5rem;
+  border-top: 1px solid var(--card-border);
+  transition: border-color 0.4s ease;
+}
+
+.sv-card:hover .sv-card-body {
+  border-top-color: rgba(0, 245, 255, 0.2);
+}
+
+.sv-icon-box {
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 245, 255, 0.1);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.sv-card:hover .sv-icon-box {
+  background: rgba(0, 245, 255, 0.18);
+  border-color: var(--cyan);
+  box-shadow: var(--glow);
+}
+
+.sv-card-body h3 {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.sv-card-body p {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin-bottom: 1.4rem;
+}
+
+.sv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-muted);
+  font-family: 'Orbitron', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  padding: 0.55rem 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sv-btn:hover,
+.sv-card:hover .sv-btn {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(0, 245, 255, 0.08);
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.2);
+}
+
+.sv-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.sv-card:hover .sv-arrow {
+  transform: translateX(4px);
+}
+
+/* ─── SERVICE MODAL ─── */
+.sv-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.sv-modal.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.sv-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(8px);
+}
+
+.sv-modal-box {
+  position: relative;
+  background: #080c1a;
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 760px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 0 80px rgba(0, 245, 255, 0.15), 0 40px 100px rgba(0, 0, 0, 0.8);
+  transform: translateY(30px) scale(0.96);
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  scrollbar-width: thin;
+  scrollbar-color: var(--cyan-dim) transparent;
+}
+
+.sv-modal-box::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sv-modal-box::-webkit-scrollbar-thumb {
+  background: var(--cyan-dim);
+  border-radius: 2px;
+}
+
+.sv-modal.open .sv-modal-box {
+  transform: translateY(0) scale(1);
+}
+
+.sv-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 38px;
+  height: 38px;
+  background: rgba(0, 245, 255, 0.08);
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  color: var(--text-muted);
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.sv-modal-close:hover {
+  background: var(--cyan);
+  color: var(--darker);
+  border-color: var(--cyan);
+}
+
+/* ─── MODAL CONTENT (injected by JS) ─── */
+.svm-img-header {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+}
+
+.svm-img-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.55) saturate(0.8);
+  display: block;
+}
+
+.svm-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(8, 12, 26, 0.95) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem 2.25rem;
+}
+
+.svm-img-overlay .section-tag {
+  margin-bottom: 0.6rem;
+  font-size: 0.6rem;
+}
+
+.svm-img-overlay h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.svm-icon-badge {
+  font-size: 1.5rem;
+}
+
+/* ─── MODAL BODY ─── */
+.svm-body {
+  padding: 2rem 2.25rem 2.5rem;
+}
+
+.svm-overview {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 2.25rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.svm-section {
+  margin-bottom: 2.25rem;
+}
+
+.svm-section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.svm-section-label .svm-label-icon {
+  width: 30px;
+  height: 30px;
+  background: rgba(0, 245, 255, 0.1);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.svm-section-label h4 {
+  font-family: 'Orbitron', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 2.5px;
+  color: var(--cyan);
+}
+
+/* ─── PROCESS STEPS ─── */
+.svm-process {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+.svm-step {
+  display: flex;
+  gap: 1.25rem;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.svm-step:last-child {
+  padding-bottom: 0;
+}
+
+.svm-step-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 40px;
+}
+
+.svm-step-num {
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 245, 255, 0.1);
+  border: 1px solid rgba(0, 245, 255, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--cyan);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.svm-step-line {
+  width: 1px;
+  flex: 1;
+  background: linear-gradient(180deg, rgba(0, 245, 255, 0.3), transparent);
+  margin-top: 4px;
+  min-height: 20px;
+}
+
+.svm-step:last-child .svm-step-line {
+  display: none;
+}
+
+.svm-step-info {
+  padding-top: 0.5rem;
+  flex: 1;
+}
+
+.svm-step-info strong {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.svm-step-info p {
+  color: var(--text-muted);
+  font-size: 0.83rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ─── DELIVERABLES ─── */
+.svm-deliverables {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem 1.5rem;
+}
+
+.svm-deliverables li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--text);
+  font-size: 0.85rem;
+  padding: 0.6rem 0.75rem;
+  background: rgba(0, 245, 255, 0.04);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.svm-deliverables li:hover {
+  border-color: rgba(0, 245, 255, 0.3);
+}
+
+.svm-check {
+  color: var(--cyan);
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* ─── MODAL CTA ─── */
+.svm-cta-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--card-border);
+  flex-wrap: wrap;
+}
+
+.svm-cta-row .btn-primary {
+  flex: 1;
+  text-align: center;
+  min-width: 160px;
+}
+
+.svm-cta-row .btn-secondary {
+  flex: 1;
+  text-align: center;
+  min-width: 160px;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 1024px) {
+  .sv-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sv-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .svm-img-header {
+    height: 200px;
+  }
+
+  .svm-body {
+    padding: 1.5rem 1.25rem 2rem;
+  }
+
+  .svm-deliverables {
+    grid-template-columns: 1fr;
+  }
+
+  .svm-cta-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .sv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sv-card-img {
+    height: 180px;
+  }
+
+  .sv-modal-box {
+    max-height: 95vh;
+  }
+
+  .svm-img-overlay h2 {
+    font-size: 1.3rem;
+  }
+}

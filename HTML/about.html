@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About TechWizards - Human-First System Builders</title>
+    <meta
+      name="description"
+      content="Learn why TechWizards creates systems that solve real-world problems through thoughtful technology, and find our location in Javier Street, Poblacion 3, Hamtic, Antique."
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/about.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-ring"></div>
+    <canvas id="particles"></canvas>
+
+    <nav>
+      <a class="nav-logo" href="../index.html">
+        <img src="../images/logo.jpg" alt="TechWizards Logo" />
+        <span>TechWizards;</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li>
+          <a href="about.html" class="active" aria-current="page">About</a>
+        </li>
+        <li>
+          <a href="mailto:techwizards42026@gmail.com" class="btn-nav"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+      <div
+        class="hamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <header class="about-hero" id="top">
+      <div class="about-hero-copy reveal-left">
+        <div class="system-badge">
+          <span class="status-dot"></span>
+          HUMAN-FIRST SYSTEM DESIGN
+        </div>
+        <h1 class="hero-title">
+          We create systems because
+          <span class="highlight">technology should make life easier</span>,
+          clearer, and more human.
+        </h1>
+        <p class="hero-desc">
+          TechWizards was built on a simple belief: if a problem keeps slowing
+          people down, then technology should step in and help. As IT builders,
+          we create systems to reduce confusion, remove repetitive work, secure
+          important information, and give people tools they can actually rely
+          on.
+        </p>
+        <p class="hero-desc hero-desc-compact">
+          We do not build for display alone. We build for
+          <span class="typed-purpose">clarity</span>.
+        </p>
+        <div class="hero-btns">
+          <a href="#purpose" class="btn-primary">Why We Build</a>
+          <a href="#location" class="btn-secondary">Find Our Base</a>
+        </div>
+      </div>
+
+      <div class="about-hero-visual reveal-right">
+        <div class="hero-console">
+          <div class="console-header">
+            <span class="console-dot"></span>
+            <span class="console-tag">MISSION // TECHWIZARDS</span>
+          </div>
+          <div class="console-grid">
+            <article class="signal-card">
+              <span class="signal-label">01 // PROBLEM</span>
+              <h3>Manual work creates friction</h3>
+              <p>
+                Slow processes, scattered records, and repeated tasks make
+                everyday work harder than it should be.
+              </p>
+            </article>
+            <article class="signal-card">
+              <span class="signal-label">02 // RESPONSE</span>
+              <h3>Systems create structure</h3>
+              <p>
+                We translate messy workflows into clean digital systems that are
+                easier to use, follow, and trust.
+              </p>
+            </article>
+            <article class="signal-card">
+              <span class="signal-label">03 // IMPACT</span>
+              <h3>People gain time and clarity</h3>
+              <p>
+                Better technology means faster service, clearer communication,
+                and fewer obstacles in daily life.
+              </p>
+            </article>
+            <article class="signal-card">
+              <span class="signal-label">04 // PROMISE</span>
+              <h3>Technology must feel helpful</h3>
+              <p>
+                Every interface, workflow, and system we design should make life
+                lighter, not more complicated.
+              </p>
+            </article>
+          </div>
+          <div class="console-footer">
+            <div class="console-chip">IT</div>
+            <div class="console-chip">SYSTEMS</div>
+            <div class="console-chip">SERVICE</div>
+            <div class="console-chip">COMMUNITY</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ═══════════════════ TICKER ═══════════════════ 
+  <div class="about-ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>// MOBILE APPS</span><span>// WEB SYSTEMS</span><span>// UI/UX DESIGN</span>
+      <span>// TARPAULIN</span><span>// INFOGRAPHICS</span><span>// LOGOS</span>
+      <span>// PRESENTATIONS</span><span>// COMMUNITY IMPACT</span>
+      <span>// MOBILE APPS</span><span>// WEB SYSTEMS</span><span>// UI/UX DESIGN</span>
+      <span>// TARPAULIN</span><span>// INFOGRAPHICS</span><span>// LOGOS</span>
+      <span>// PRESENTATIONS</span><span>// COMMUNITY IMPACT</span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ STATS STRIP ═══════════════════ -->
+    <div class="stats-strip-wrap">
+      <div class="stats-strip-inner reveal">
+        <div class="stat-block">
+          <span
+            class="stat-block-num counter-value"
+            data-target="4"
+            data-suffix=""
+            >0</span
+          >
+          <span class="stat-block-label">Core IT Builders</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-block">
+          <span
+            class="stat-block-num counter-value"
+            data-target="8"
+            data-suffix=""
+            >0</span
+          >
+          <span class="stat-block-label">Service Lanes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-block">
+          <span
+            class="stat-block-num counter-value"
+            data-target="20"
+            data-suffix="+"
+            >0+</span
+          >
+          <span class="stat-block-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-block">
+          <span
+            class="stat-block-num counter-value"
+            data-target="100"
+            data-suffix="%"
+            >0%</span
+          >
+          <span class="stat-block-label">Human-Centered</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════ MISSION ═══════════════════ -->
+    <section class="mission-section" id="mission">
+      <div class="section-header reveal">
+        <div class="section-tag">OUR REASON</div>
+        <h2 class="section-title">Why We Create <span>Systems</span></h2>
+        <p class="section-sub">
+          We are in Information Technology, but our work is not only about
+          software. It is about helping people move through life with fewer
+          barriers.
+        </p>
+      </div>
+
+      <div class="mission-layout">
+        <article class="mission-panel reveal-left">
+          <h3>Technology should solve real problems, not create new ones.</h3>
+          <p>
+            We create systems because many real-world problems come from broken
+            flow: lost information, delayed responses, manual tracking, unclear
+            communication, and processes that depend too much on memory instead
+            of structure.
+          </p>
+          <p>
+            For us, a system is more than code. It is a practical way to make
+            work smoother, decisions faster, records safer, and services more
+            accessible. When technology is built with care, it becomes a tool
+            that supports people in school, business, and everyday life.
+          </p>
+          <p>
+            That is the heart of TechWizards. We love technology because it
+            gives us the power to turn problems into solutions people can feel —
+            in saved time, clearer tasks, stronger organization, and better
+            experiences.
+          </p>
+
+          <div class="mission-points">
+            <div class="mission-point">
+              <span class="mission-index">A1</span>
+              <div>
+                <strong>We listen before we build.</strong>
+                <p>
+                  Every useful system starts by understanding the real struggle
+                  behind the request.
+                </p>
+              </div>
+            </div>
+            <div class="mission-point">
+              <span class="mission-index">A2</span>
+              <div>
+                <strong>We design with people in mind.</strong>
+                <p>
+                  Good technology should feel understandable, approachable, and
+                  dependable from day one.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="mission-timeline reveal-right">
+          <div class="tl-header">
+            <span class="console-dot"></span>
+            <span class="console-tag">AT A GLANCE</span>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-node">
+              <span
+                class="tl-number counter-value"
+                data-target="4"
+                data-suffix=""
+                >0</span
+              >
+            </div>
+            <div class="tl-content">
+              <span class="tl-label">Core IT builders</span>
+              <p>
+                A focused team driven by service, creativity, and technical
+                problem-solving.
+              </p>
+            </div>
+          </div>
+          <div class="tl-connector"></div>
+          <div class="timeline-item">
+            <div class="tl-node">
+              <span
+                class="tl-number counter-value"
+                data-target="8"
+                data-suffix=""
+                >0</span
+              >
+            </div>
+            <div class="tl-content">
+              <span class="tl-label">Service lanes</span>
+              <p>
+                From mobile and web systems to design assets that help ideas
+                become usable outputs.
+              </p>
+            </div>
+          </div>
+          <div class="tl-connector"></div>
+          <div class="timeline-item">
+            <div class="tl-node">
+              <span
+                class="tl-number counter-value"
+                data-target="100"
+                data-suffix="%"
+                >0%</span
+              >
+            </div>
+            <div class="tl-content">
+              <span class="tl-label">Human-centered mindset</span>
+              <p>
+                We keep real users, real communities, and real outcomes at the
+                center of every build.
+              </p>
+            </div>
+          </div>
+          <div class="tl-connector"></div>
+          <div class="timeline-item">
+            <div class="tl-node">
+              <span
+                class="tl-number counter-value"
+                data-target="1"
+                data-suffix=""
+                >0</span
+              >
+            </div>
+            <div class="tl-content">
+              <span class="tl-label">Shared mission</span>
+              <p>
+                Use technology to remove friction and create solutions that
+                genuinely help people.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ PURPOSE ═══════════════════ -->
+    <section class="purpose-section" id="purpose">
+      <div class="section-header reveal">
+        <div class="section-tag">WHAT DRIVES US</div>
+        <h2 class="section-title">
+          The Meaning Behind Every <span>System</span>
+        </h2>
+        <p class="section-sub">
+          Our systems are built to answer the everyday question: how can
+          technology make this easier, safer, faster, and more useful for real
+          people?
+        </p>
+      </div>
+
+      <div class="purpose-grid">
+        <article class="purpose-card reveal">
+          <div class="purpose-bg-num" aria-hidden="true">01</div>
+          <span class="purpose-icon">&#9889;</span>
+          <span class="purpose-number">01</span>
+          <h3>To remove friction</h3>
+          <p>
+            We build systems that reduce unnecessary steps, repeated labor, and
+            avoidable delays so people can focus on what truly matters.
+          </p>
+        </article>
+        <article class="purpose-card reveal">
+          <div class="purpose-bg-num" aria-hidden="true">02</div>
+          <span class="purpose-icon">&#9202;</span>
+          <span class="purpose-number">02</span>
+          <h3>To protect time</h3>
+          <p>
+            Time is one of the most valuable things people have. Better systems
+            help save it, organize it, and use it with more intention.
+          </p>
+        </article>
+        <article class="purpose-card reveal">
+          <div class="purpose-bg-num" aria-hidden="true">03</div>
+          <span class="purpose-icon">&#9679;</span>
+          <span class="purpose-number">03</span>
+          <h3>To make service accessible</h3>
+          <p>
+            A well-designed system makes important information and services
+            easier to reach, understand, and act on.
+          </p>
+        </article>
+        <article class="purpose-card reveal">
+          <div class="purpose-bg-num" aria-hidden="true">04</div>
+          <span class="purpose-icon">&#9670;</span>
+          <span class="purpose-number">04</span>
+          <h3>To build trust through clarity</h3>
+          <p>
+            Clean workflows, readable interfaces, and stable systems help people
+            feel confident instead of confused when they use technology.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ PROCESS ═══════════════════ -->
+    <section class="process-section" id="process">
+      <div class="section-header reveal">
+        <div class="section-tag">HOW WE WORK</div>
+        <h2 class="section-title">From Problem to <span>Solution</span></h2>
+        <p class="section-sub">
+          We treat each system like a real responsibility. It must work, it must
+          serve people, and it must stay clear from start to finish.
+        </p>
+      </div>
+
+      <div class="process-timeline reveal">
+        <div class="process-steps">
+          <article class="process-step-item">
+            <div class="step-circle"><span class="step-num">01</span></div>
+            <div class="step-body">
+              <h3>Diagnose the problem</h3>
+              <p>
+                We study where delays, confusion, and pain points are happening
+                before writing a single feature.
+              </p>
+            </div>
+          </article>
+          <article class="process-step-item">
+            <div class="step-circle"><span class="step-num">02</span></div>
+            <div class="step-body">
+              <h3>Design for real users</h3>
+              <p>
+                We shape the experience around the people who will use the
+                system, not just the technology behind it.
+              </p>
+            </div>
+          </article>
+          <article class="process-step-item">
+            <div class="step-circle"><span class="step-num">03</span></div>
+            <div class="step-body">
+              <h3>Build with purpose</h3>
+              <p>
+                Every component, workflow, and visual element is created to
+                solve a need with clarity and reliability.
+              </p>
+            </div>
+          </article>
+          <article class="process-step-item">
+            <div class="step-circle"><span class="step-num">04</span></div>
+            <div class="step-body">
+              <h3>Support the result</h3>
+              <p>
+                We value long-term usefulness, because a good system should keep
+                helping after launch, not just look good once.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ CAPABILITIES ═══════════════════ -->
+    <section class="capabilities-section">
+      <div class="section-header reveal">
+        <div class="section-tag">WHAT WE MASTER</div>
+        <h2 class="section-title">Our Core <span>Capabilities</span></h2>
+        <p class="section-sub">
+          Eight lanes of digital service — each one built to turn an idea into
+          something real and useful.
+        </p>
+      </div>
+
+      <div class="cap-grid reveal">
+        <div class="cap-item">
+          <span class="cap-icon">📱</span>
+          <span class="cap-label">Mobile Apps</span>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🌐</span>
+          <span class="cap-label">Web Apps</span>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🖼️</span>
+          <span class="cap-label">Tarpaulin</span>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">📊</span>
+          <span class="cap-label">Infographics</span>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🗂️</span>
+          <span class="cap-label">Flyers</span>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🏷️</span>
+          <span class="cap-label">Logos</span>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🎞️</span>
+          <span class="cap-label">Presentations</span>
+        </div>
+        <div class="cap-item">
+          <span class="cap-icon">🎨</span>
+          <span class="cap-label">UI / UX Design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ LOCATION ═══════════════════ -->
+    <section class="location-section" id="location">
+      <div class="section-header reveal">
+        <div class="section-tag">OUR LOCATION</div>
+        <h2 class="section-title">Built in <span>Hamtic, Antique</span></h2>
+        <p class="section-sub">
+          TechWizards is located in Javier Street, Poblacion 3, Hamtic, Antique
+          — where local insight meets modern IT thinking.
+        </p>
+      </div>
+
+      <div class="location-layout">
+        <article class="location-panel reveal-left">
+          <h3>Our base of operations</h3>
+          <p>
+            We are proud to create systems from Javier Street, Poblacion 3,
+            Hamtic, Antique. This is where we shape ideas into solutions and
+            keep our work grounded in real community needs.
+          </p>
+          <p>
+            Our location reminds us that technology should not feel distant or
+            unreachable. It should be present, practical, and ready to help
+            wherever people need it most.
+          </p>
+
+          <div class="location-pills">
+            <span class="location-pill">Javier Street</span>
+            <span class="location-pill">Poblacion 3</span>
+            <span class="location-pill">Hamtic, Antique</span>
+          </div>
+
+          <div class="address-grid">
+            <div class="location-card">
+              <span class="location-card-label">ADDRESS</span>
+              <strong>Javier Street, Poblacion 3, Hamtic, Antique</strong>
+            </div>
+            <div class="location-card">
+              <span class="location-card-label">MISSION</span>
+              <strong
+                >Use technology to help people solve real-life problems.</strong
+              >
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a
+              href="https://www.google.com/maps?q=Javier+Street,+Poblacion+3,+Hamtic,+Antique"
+              target="_blank"
+              rel="noopener"
+              class="btn-primary"
+            >
+              Open in Maps
+            </a>
+            <a href="mailto:techwizards42026@gmail.com" class="btn-secondary"
+              >Email TechWizards</a
+            >
+          </div>
+        </article>
+
+        <div class="map-shell reveal-right">
+          <iframe
+            title="TechWizards location map"
+            src="https://www.google.com/maps?q=Javier+Street,+Poblacion+3,+Hamtic,+Antique&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ CTA ═══════════════════ -->
+    <section class="cta-section">
+      <div class="cta-panel reveal">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="section-tag">NEXT SYSTEM</div>
+        <h2 class="section-title">
+          If a process is slowing people down, it can be redesigned.
+        </h2>
+        <p class="section-sub">
+          We build systems because better technology can create better everyday
+          experiences. That is the kind of work we want to keep doing.
+        </p>
+        <div class="hero-btns cta-actions">
+          <a href="portfolio.html" class="btn-primary">See Our Work</a>
+          <a href="services.html" class="btn-secondary">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer id="footer-section">
+      <div class="footer-grid">
+        <div class="footer-brand reveal">
+          <div class="brand-name">TechWizards;</div>
+          <p>
+            We create systems with purpose — using technology to make work
+            smoother, communication clearer, and life easier for the people we
+            serve.
+          </p>
+          <div class="social-links">
+            <a
+              class="social-link"
+              href="mailto:techwizards42026@gmail.com"
+              title="Email"
+              >EM</a
+            >
+            <a
+              class="social-link"
+              href="https://www.facebook.com/profile.php?id=61587937806654"
+              target="_blank"
+              rel="noopener"
+              title="Facebook"
+              >FB</a
+            >
+            <a class="social-link" href="tel:+639939790700" title="Call">PH</a>
+          </div>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>ABOUT PAGE</h4>
+          <ul>
+            <li><a href="#mission">Why We Create Systems</a></li>
+            <li><a href="#purpose">Meaning Behind Our Work</a></li>
+            <li><a href="#process">How We Work</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>NAVIGATION</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col reveal">
+          <h4>CONTACT INFO</h4>
+          <div class="contact-item">
+            <div class="contact-icon">PH</div>
+            <div class="contact-text">
+              <a href="tel:+639939790700">0993 979 0700</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">EM</div>
+            <div class="contact-text">
+              <a href="mailto:techwizards42026@gmail.com"
+                >techwizards42026@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">MAP</div>
+            <div class="contact-text">
+              Javier Street, Poblacion 3, Hamtic, Antique
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechWizards. Human-first systems, built with purpose.</p>
+      </div>
+    </footer>
+
+    <script src="../JS/about.js"></script>
+    <script src="../JS/cursor-fx.js"></script>
+  </body>
+</html>
