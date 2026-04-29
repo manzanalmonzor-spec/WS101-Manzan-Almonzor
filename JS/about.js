@@ -261,6 +261,31 @@ if (typedElement) {
   }
 }
 
+// Contact Modal
+const contactModal = document.getElementById("contactModal");
+const contactBackdrop = document.getElementById("contactBackdrop");
+
+function openContactModal(e) {
+  e?.preventDefault();
+  contactModal.classList.add("open");
+  document.body.style.overflow = "hidden";
+  if (typeof window.resetContactForm === "function") window.resetContactForm();
+}
+
+function closeContactModal() {
+  contactModal.classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+document.getElementById("openContact")?.addEventListener("click", openContactModal);
+document.getElementById("closeContact")?.addEventListener("click", closeContactModal);
+document.getElementById("successClose")?.addEventListener("click", closeContactModal);
+contactBackdrop?.addEventListener("click", closeContactModal);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeContactModal();
+});
+
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (event) => {
     const href = link.getAttribute("href");
