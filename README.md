@@ -1,6 +1,6 @@
 # TechWizards Portfolio Website
 
-> **An informative, professional, and user-friendly business portfolio and service website for TechWizards — an emerging IT startup based in Antique, Philippines.**
+> **An informative, professional, and user-friendly business portfolio and service website for TechWizards an emerging IT startup based in Antique, Philippines.**
 
 > **Live Site:** [https://ws-101-manzan-almonzor.vercel.app/](https://ws-101-manzan-almonzor.vercel.app/)
 
@@ -10,7 +10,7 @@
 
 This project is a multi-page business portfolio and service website for **TechWizards**, an information technology startup established in 2026 in Antique, Philippines. The website promotes the company's identity, showcases its specialized skills, and presents the range of technology services it offers to students, individuals, and organizations.
 
-The website features the company background, mission, specialized programming and database skills, and the various projects and services offered — including website development, desktop and mobile applications, Arduino and IoT-based systems, capstone and project-based systems, UI/UX design, video editing, logo and brand visuals, and Canva-based designs. A dedicated contact section allows clients to send inquiries and collaboration requests via email and Facebook.
+The website features the company background, mission, specialized programming and database skills, and the various projects and services offered including website development, desktop and mobile applications, Arduino and IoT-based systems, capstone and project-based systems, UI/UX design, video editing, logo and brand visuals, and Canva-based designs. A dedicated contact section allows clients to send inquiries and collaboration requests via email and Facebook.
 
 The main goal is to build a platform that helps TechWizards expand its online presence, attract potential clients, and highlight its commitment to **innovation, creativity, productivity, and continuous improvement** in information technology.
 
