@@ -6,7 +6,7 @@
 
 ## Overview
 
-This project is a multi-page business portfolio and service website for **TechWizards**, an information technology startup established in 2026 in Antique, Philippines. The website promotes the company's identity, showcases its specialized skills, and presents the range of technology services it offers to students, individuals, and organizations.
+This project is a multi-page business portfolio and service website for **TechWizards**, an information technology startup established in 2026 in Poblacion 3, Hamtic, Antique, Philippines. The website promotes the company's identity, showcases its specialized skills, and presents the range of technology services it offers to students, individuals, and organizations.
 
 The website features the company background, mission, specialized programming and database skills, and the various projects and services offered including website development, desktop and mobile applications, Arduino and IoT-based systems, capstone and project-based systems, UI/UX design, video editing, logo and brand visuals, and Canva-based designs. A dedicated contact section allows clients to send inquiries and collaboration requests via email and Facebook.
 
