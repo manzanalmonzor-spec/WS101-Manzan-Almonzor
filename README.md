@@ -1,189 +1,67 @@
 # TechWizards Portfolio Website
 
-> **An informative, professional, and user-friendly business portfolio and service website for TechWizards an emerging IT startup based in Antique, Philippines.**
+**Project Title:** TechWizards Portfolio Website
 
-> **Live Site:** [https://ws-101-manzan-almonzor.vercel.app/](https://ws-101-manzan-almonzor.vercel.app/)
-
----
-
-## Overview
-
-This project is a multi-page business portfolio and service website for **TechWizards**, an information technology startup established in 2026 in Antique, Philippines. The website promotes the company's identity, showcases its specialized skills, and presents the range of technology services it offers to students, individuals, and organizations.
-
-The website features the company background, mission, specialized programming and database skills, and the various projects and services offered including website development, desktop and mobile applications, Arduino and IoT-based systems, capstone and project-based systems, UI/UX design, video editing, logo and brand visuals, and Canva-based designs. A dedicated contact section allows clients to send inquiries and collaboration requests via email and Facebook.
-
-The main goal is to build a platform that helps TechWizards expand its online presence, attract potential clients, and highlight its commitment to **innovation, creativity, productivity, and continuous improvement** in information technology.
+**Designer:** Almonzor S. Manzan BSIT 3B
 
 ---
 
-## Project Details
+## Short Overview of the Project
 
-| Field | Details |
-|---|---|
-| **Project Title** | TechWizards Portfolio Website |
-| **Designer** | Almonzor S. Manzan — BSIT 3B |
-| **Frontend Stack** | HTML5, CSS3, JavaScript (Vanilla) |
-| **Deployment** | [Vercel](https://ws-101-manzan-almonzor.vercel.app/) |
-| **Contact Email** | techwizards42026@gmail.com |
-| **Location** | Javier Street, Poblacion 3, Hamtic, Antique, Philippines |
+TechWizards Portfolio Website is a multi-page business portfolio and service website for TechWizards, an information technology startup established in 2026 in Antique, Philippines. The website promotes the company's identity, showcases its specialized skills, and presents the range of technology services it offers to students, individuals, and organizations — including website development, mobile applications, UI/UX design, tarpaulin and print design, infographics, flyers, logo and brand visuals, and PowerPoint presentations. A contact section allows clients to send inquiries via email through a FormSubmit.co-powered contact form.
 
 ---
 
-## Pages
+## Framework Used
 
-| Page | File | Description |
-|---|---|---|
-| Home | `index.html` | Landing page with hero, services preview, portfolio grid, about section, and contact modal |
-| About | `HTML/about.html` | Company background, mission, purpose, process timeline, capabilities, and location |
-| Services | `HTML/services.html` | Full service catalog with detailed modals per service |
-| Portfolio | `HTML/portfolio.html` | Project showcase with filtering, project detail modals, and team profiles |
+HTML5, CSS3, JavaScript (Vanilla)
 
 ---
 
-## Features
+## URL / Domain
 
-### UI & Animations
-- Custom animated cursor with trailing ring effect and click spark particles
-- Particle background system with dynamic connecting lines
-- Typed text animation cycling through: *Innovation, Performance, Precision, Excellence*
-- Scroll-triggered reveal animations with staggered entry
-- Smooth counter animations for stats (20+ Projects, 8 Services, 4 Members)
-- 3D tilt effect on service cards (mouse-tracking rotateX/Y)
-- Glitch text and scanline overlay effects for cyberpunk aesthetic
-
-### Navigation & Layout
-- Fixed glassmorphism navbar with active section highlighting on scroll
-- Responsive hamburger menu for mobile
-- Clean URL routing via Vercel configuration
-- Smooth scroll for anchor navigation
-
-### Portfolio & Services
-- Category-based portfolio filter (All, Mobile, Web, Tarpaulin, Infographics, Flyers, Logos, Presentations)
-- Lightbox image viewer for portfolio items
-- Service detail modals with process steps, deliverables, and CTAs
-- Project detail modals with tech tags and contributor information
-- Team member showcase with skills, stats, and GitHub profile links
-
-### Contact & Forms
-- Contact form modal with fields: First Name, Last Name, Email, Service type, Message
-- Form submission via **FormSubmit.co** AJAX endpoint
-- Email notifications forwarded to `techwizards42026@gmail.com`
-- Graceful error handling with fallback guidance
+[https://ws-101-manzan-almonzor.vercel.app/](https://ws-101-manzan-almonzor.vercel.app/)
 
 ---
 
-## Services Offered
+## Use of AI Tool
 
-| # | Service |
-|---|---|
-| 1 | Mobile Application Development |
-| 2 | Website Development |
-| 3 | Tarpaulin & Print Design |
-| 4 | Infographics |
-| 5 | Flyers & Marketing Materials |
-| 6 | Logo & Brand Visuals |
-| 7 | PowerPoint Presentations |
-| 8 | UI/UX Design |
+### 1. Anthropic Claude Opus 4.7
 
----
+**How it is used:**
+Assisted in polishing and improving the Vanilla JavaScript codebase — specifically for responsiveness fixes, contact form handling logic, and FormSubmit.co integration.
 
-## Project Structure
+**Prompt:**
+> "Here is my contact form JavaScript. It submits to FormSubmit.co via AJAX but the success and error handling is not working properly. Fix the logic and make sure errors are handled gracefully with a fallback message for the user."
 
-```
-Techwizaaards/
-├── index.html              # Main landing page
-├── vercel.json             # Vercel deployment config (cleanUrls: true)
-├── README.md
-│
-├── HTML/
-│   ├── about.html          # Company background, mission & team
-│   ├── services.html       # Full service catalog with modals
-│   └── portfolio.html      # Project showcase & team profiles
-│
-├── CSS/
-│   ├── style.css           # Global styles — color system, nav, hero, cards
-│   ├── about.css           # About page specific layout & animations
-│   ├── services.css        # Service cards, modals, and responsive grid
-│   └── portfolio.css       # Portfolio grid, team cards, and project modals
-│
-├── JS/
-│   ├── main.js             # Core: cursor, particles, nav, typed text, filters, counters
-│   ├── cursor-fx.js        # Canvas-based spark particle effects on click/trail
-│   ├── firebase-contact.js # Contact form handler via FormSubmit.co
-│   ├── about.js            # About page interactions
-│   ├── services.js         # Service modal handlers and data rendering
-│   └── portfolio.js        # Portfolio filtering, modals, team card rendering
-│
-└── images/
-    ├── logo.jpg            # Brand logo
-    ├── mobile.jpg          # Mobile apps showcase
-    ├── website.jpg         # Web apps showcase
-    ├── tarp.jpg            # Tarpaulin design showcase
-    ├── infographic.jpg     # Infographics showcase
-    ├── flyer.jpg           # Flyers showcase
-    ├── logozz.jpg          # Logos & branding showcase
-    ├── powpt.jpg           # PowerPoint showcase
-    └── awtss.jpg           # UI/UX design showcase
-```
+**How it was applied:**
+Claude reviewed the existing `firebase-contact.js` file, corrected the AJAX submission flow, improved the success/error feedback shown to users, and ensured the form resets properly after submission.
 
 ---
 
-## Design System
+### 2. ChatGPT
 
-| Token | Value |
-|---|---|
-| Primary Color | `#00f5ff` (Cyan) |
-| Background | `#0a0e1a` (Deep Navy) |
-| Surface Dark | `#060810` |
-| Text Primary | `#e2e8f0` |
-| Text Muted | `#94a3b8` |
-| Card Border | `rgba(0, 245, 255, 0.15)` |
-| Heading Font | Orbitron (monospace, tech aesthetic) |
-| Body Font | Inter (sans-serif, clean readability) |
+**How it is used:**
+Assisted with Git workflow — managing commits and pushing the project to GitHub.
 
-**Theme:** Cyberpunk / Futuristic — glassmorphism cards, neon cyan accents, radial gradients, and subtle scanline overlays.
+**Prompt:**
+> "I have a local project folder. Walk me through how to initialize a Git repository, add all my files, make an initial commit, and push it to a new GitHub repository."
 
-**Responsive Breakpoints:** 1024px · 768px · 480px
+**How it was applied:**
+ChatGPT provided step-by-step Git commands used to initialize the repo, stage files, write commit messages, set the remote origin, and push to GitHub.
 
 ---
 
-## Team
+### 3. Google Gemini
 
-| Name | Role | GitHub |
-|---|---|---|
-| Almonzor S. Manzan | Lead Designer / Developer | [manzanalmonzor-spec](https://github.com/manzanalmonzor-spec) |
-| Khing Jay Regala | Developer | [Kaisecret](https://github.com/Kaisecret) |
-| Dan Louise Baluntong | Developer | — |
-| Matt Lowee Espiritu | Developer | — |
+**How it is used:**
+Supported the idealization and construction of documentation for the project proposal.
 
----
+**Prompt:**
+> "Help me write a project proposal for a portfolio website for a small IT startup called TechWizards based in Antique, Philippines. Include an overview, objectives, scope, and expected outputs."
 
-## AI Tools Used
-
-This project utilized AI assistance across different stages of development:
-
-| AI Tool | Usage |
-|---|---|
-| **Anthropic Claude Opus 4.7** | Polishing Vanilla JavaScript — enhanced responsiveness, optimized contact form handling, and Firebase/FormSubmit integration |
-| **ChatGPT** | Assisted with Git workflow — managing pushes and commits to GitHub |
-| **Google Gemini** | Supported idealization and construction of documentation for the project proposal |
-
----
-
-## Deployment
-
-The website is deployed on **[Vercel](https://ws-101-manzan-almonzor.vercel.app/)** — visit the live site at: https://ws-101-manzan-almonzor.vercel.app/
-
-Configuration used:
-
-```json
-{
-  "outputDirectory": ".",
-  "cleanUrls": true
-}
-```
-
-`cleanUrls: true` enables clean URL paths — e.g., `/about` instead of `/HTML/about.html`.
+**How it was applied:**
+Gemini generated a structured project proposal draft that served as the foundation for the formal documentation submitted as part of the project requirements.
 
 ---
 
