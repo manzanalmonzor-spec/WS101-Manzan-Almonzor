@@ -1,6 +1,6 @@
 # TechWizards Portfolio Website
 
-> **An informative, professional, and user-friendly business portfolio and service website for TechWizards — an emerging IT startup based in Antique, Philippines.**
+> **An informative, professional, and user-friendly business portfolio and service website for TechWizards  an emerging IT startup based in Antique, Philippines.**
 
 ---
 
