@@ -29,7 +29,7 @@ HTML5, CSS3, JavaScript (Vanilla)
 ### 1. Anthropic Claude Opus 4.7
 
 **How it is used:**
-Assisted in polishing and improving the Vanilla JavaScript codebase — specifically for responsiveness fixes, contact form handling logic, and FormSubmit.co integration.
+Assisted in polishing and improving the Vanilla JavaScript codebase specifically for responsiveness fixes, contact form handling logic, and FormSubmit.co integration.
 
 **Prompt:**
 > "Here is my contact form JavaScript. It submits to FormSubmit.co via AJAX but the success and error handling is not working properly. Fix the logic and make sure errors are handled gracefully with a fallback message for the user."
@@ -42,7 +42,7 @@ Claude reviewed the existing `firebase-contact.js` file, corrected the AJAX subm
 ### 2. ChatGPT
 
 **How it is used:**
-Assisted with Git workflow — managing commits and pushing the project to GitHub.
+Assisted with Git workflow managing commits and pushing the project to GitHub.
 
 **Prompt:**
 > "I have a local project folder. Walk me through how to initialize a Git repository, add all my files, make an initial commit, and push it to a new GitHub repository."
