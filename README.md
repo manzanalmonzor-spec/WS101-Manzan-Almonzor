@@ -5,16 +5,15 @@
 **Designer:** Almonzor S. Manzan BSIT 3B
 
 ---
+## Framework Used
 
+HTML5, CSS3, JavaScript (Vanilla)
+
+---
 ## Short Overview of the Project
 
 TechWizards Portfolio Website is a multi-page business portfolio and service website for TechWizards, an information technology startup established in 2026 in Antique, Philippines. The website promotes the company's identity, showcases its specialized skills, and presents the range of technology services it offers to students, individuals, and organizations — including website development, mobile applications, UI/UX design, tarpaulin and print design, infographics, flyers, logo and brand visuals, and PowerPoint presentations. A contact section allows clients to send inquiries via email through a FormSubmit.co-powered contact form.
 
----
-
-## Framework Used
-
-HTML5, CSS3, JavaScript (Vanilla)
 
 ---
 
